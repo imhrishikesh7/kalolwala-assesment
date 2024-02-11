@@ -1,0 +1,218 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  background: black;
+  margin: 0;
+  padding: 0;
+  height: 500vh;
+}
+/* NAVBAR CSS */
+.navbar {
+  background-color: black;
+  margin: 0 auto;
+  padding: 4px;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  max-width: 1200px; /* Add a maximum width if needed */
+}
+
+.navbar .navbar-brand img {
+  margin-right: 10em; /* Remove any unwanted margin */
+  font-size: 30px;
+  width: 100px;
+  height: 80px;
+}
+.navbar .navbar-nav {
+  align-items: center;
+}
+  .navbar .navbar-nav .hov {
+  position: relative;
+  color: #fff;
+  margin-right: 25px;
+}
+.navbar .navbar-nav .hov::after {
+  position: absolute;
+  /* bottom: 0; */
+  bottom: 0.5px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  content: "";
+  /* color: #fff; */
+  background-color: #ffcb05;
+  width: 0%;
+  height: 2px;
+  transition: all 0.5s;
+}
+.navbar .navbar-nav .nav-link {
+  align-content: center;
+  
+}
+.navbar .navbar-nav .nav-link button {
+  background-color: #ffcb05;
+  white-space: nowrap;
+  padding: 4px 8px;
+}
+
+.navbar .navbar-nav .hov:hover::after,
+.navbar .navbar-nav .hov.show::after {
+  width: 80%;
+}
+/* HERO CSS */
+.hero{
+ width: 95%;
+ margin-top: 150px;
+ margin-bottom: 30px;
+}
+.hero h1{
+  font-size: 220px; 
+  font-family: Arial, Helvetica, sans-serif; 
+  background: linear-gradient(to right, #4596FB, #57F2CC, #27DAA4); 
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+}
+.hero h2{
+  color: #fff;
+  font-size: 50px;
+}
+/* HERO2 CSS */
+.hero2{
+  width: 100%;
+  margin-top: 20%;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero2 section{
+  width: fit-content;
+}
+.hero2 img{
+  height: 500px;
+  width: 400px;
+
+}
+.hero2 h1{
+  font-size: 130px;
+  font-family: Arial, Helvetica, sans-serif; 
+  background: linear-gradient(to right, #FA8742, #FABC0E, #FFDD51); 
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+}
+.hero2 h2{
+  color: #fff;
+  font-size: 35px;
+}
+.hero2 p{
+  color: #fff;
+  font-size: 14px;
+}
+.table{
+  margin-top: 20%;
+  justify-content: space-between;
+}
+.table .tab1,.tab2{
+  /* border: 2px solid white; */
+  padding: 16px;
+  background-color: #171717;
+
+}
+.table .tab1 h2{
+  color: #fff;
+}
+.tab2  {
+  color: #fff;
+  text-align: right;
+  width: 79%
+}
+.tab1  {
+  color: #fff;
+  width: 19%
+}
+.table p{
+  color: grey;
+}
+.table h2 .green{
+  -webkit-text-fill-color: #B2F8C2;
+  background: none;
+}
+.table h2 .blue{
+  -webkit-text-fill-color: #B5A3FF;
+  background: none;
+}
+.neon-border-container {
+  position: relative; /* Ensure proper positioning of the NeonBorder component */
+}
+
+.neon-border-content {
+  position: relative; /* Ensure proper positioning of the content within NeonBorder */
+}
+
+.container.table.row {
+  position: relative; /* Ensure proper positioning of the container table row */
+}
+.svg-border {
+  position: absolute; /* Position the border absolutely within NeonBorder */
+  top: 0;
+  left: 0;
+}
+/* CLIENTS CSS */
+.c1{
+  margin-top: 20%;
+  /* width: fit-content; */
+}
+.c1 h1{
+  font-size: 140px; 
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+.c1 h2{
+  font-size: 80px;
+  font-family: Arial, Helvetica, sans-serif; 
+  background: linear-gradient(to right, #FA8742, #FABC0E, #FFDD51); 
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+  text-align: right;
+}
+.c1 h3{
+  font-size: 28px; 
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align: right;
+}
+.c-row{
+  /* border: 2px solid white; */
+  /* width: 100vw; */
+  justify-items: center;
+  box-sizing: border-box;
+}
+.c-row img{
+  /* border: 2px solid white; */
+  width: 100%;
+}
+/* FOOTER CSS */
+.footer {
+  background-image: radial-gradient(#14171A, #070809);
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100vw; /* Limit to viewport width */
+  height: 300px;
+  justify-content: space-around;
+  align-items: center;
+  overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+}
+
+.footer ul {
+  list-style-type: none;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul .select{
+  color: grey;
+}
+.footer ul li {
+  margin: 12px;
+  font-size: small;
+}
+
